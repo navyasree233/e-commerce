@@ -1,0 +1,156 @@
+/* Reset default margin and padding */
+body, h1, h2, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  position: relative;
+  min-height: 100vh; /* Change min-width to min-height */
+  display: flex; /* Add display flex */
+  flex-direction: column; /* Make it a column layout */
+  background: linear-gradient(to right, #333,#ffffff);
+}
+
+header {
+  background-color: #333;
+  color: #f3f3f3;
+  padding: 1vw; /* Adjust padding using viewport units */
+  text-align: center;
+}
+
+header h1 {
+  font-size: 3vw; /* Adjust font size using viewport units */
+}
+
+nav ul {
+  list-style: none;
+  margin-top: 2vw;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10%; /* Adjust padding for left and right margin */
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 5vw; /* Adjust margin using viewport units */
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 2vw; /* Adjust font size using viewport units */
+}
+
+nav ul li a:hover {
+  color: #ff9900;
+}
+
+main {
+  flex: 1; /* Take remaining space */
+  padding: 5vw; /* Adjust padding using viewport units */
+}
+
+.product {
+  display: flex;
+  align-items: center;
+  width: auto; /* Adjust width dynamically based on content */
+}
+
+.product-image {
+  flex: 0 0 auto; /* Allow the image container to shrink and grow as needed */
+  margin-right: 5vw; /* Add some spacing between the image and info */
+}
+
+.product-image img {
+  max-width: 25vw;
+  height: auto;
+  border-radius: 2vw;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1); /* Add shadow */
+  border: 2px solid #ccc;
+}
+
+.product-image img:hover {
+  scale: 1.1;
+}
+
+.product-info {
+  flex-grow: 1; /* Occupy remaining space */
+}
+
+.product-info h2 {
+  font-size: 3vw; /* Adjust font size using viewport units */
+  margin-bottom: 2vw; /* Adjust margin using viewport units */
+}
+
+.product-info .description {
+  color: #292929;
+  margin-bottom: 3vw; /* Adjust margin using viewport units */
+}
+
+.product-info .price {
+  font-size: 3vw; /* Adjust font size using viewport units */
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 3vw; /* Adjust margin using viewport units */
+}
+
+.cta {
+  background-color: #ff9900;
+  color: #fff;
+  border: none;
+  padding: 2vw 4vw; /* Adjust padding using viewport units */
+  cursor: pointer;
+  font-size: 2vw; /* Adjust font size using viewport units */
+  transition: background-color 0.3s;
+  border-radius: 10px;
+}
+
+.view-more {
+  background-color: #838282;
+  color: #fff;
+  padding: 1vw 1vw; /* Adjust padding using viewport units */
+  cursor: pointer;
+  font-size: 1vw; /* Adjust font size using viewport units */
+  border-radius: 10px;
+  border: 0.5px solid #333;
+
+}
+
+.cta:hover {
+  background-color: #ffcc66;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 5vw; /* Adjust padding using viewport units */
+  text-align: center;
+}
+
+.product-info .extra-description {
+  display: none; /* Initially hide extra description */
+  margin: 2vh;
+}
+
+.success-msg {
+  width: 50vw;
+  height: 5vw;
+  margin-bottom: 1vw;
+  color: #270;
+  background-color: #DFF2BF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  font-size: 2vw;
+  display: none;
+}
+
+
+.success-msg i {
+  margin-right: 5px; /* Adjust the margin as needed */
+}
+
+
